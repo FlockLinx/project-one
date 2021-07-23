@@ -40,4 +40,8 @@ defmodule ProjectOneWeb.UserController do
       send_resp(conn, :no_content, "")
     end
   end
+
+  def custom(conn, _) do
+    render(conn, "custom.json")
+  end
 end

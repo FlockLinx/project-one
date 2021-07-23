@@ -8,6 +8,5 @@ defmodule ProjectOne.Repo.Migrations.CreateUsers do
 
       timestamps()
     end
-
   end
 end
