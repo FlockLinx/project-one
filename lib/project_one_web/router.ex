@@ -7,5 +7,6 @@ defmodule ProjectOneWeb.Router do
 
   scope "/api", ProjectOneWeb do
     pipe_through :api
+    resources "/users", UserController
   end
 end
