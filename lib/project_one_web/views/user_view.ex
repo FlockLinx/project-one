@@ -14,7 +14,8 @@ defmodule ProjectOneWeb.UserView do
     %{id: user.id, name: user.name, age: user.age}
   end
 
-  def render("custom.json", _) do
-    %{data: "Olá json"}
+  def render("custom.json", %{word: word}) do
+    %{data: "Olá json", random_word: word}
+    |> Map.put(:pipe_lesson, "Stevan, aprova nosso update se vc é legal mesmo")
   end
 end

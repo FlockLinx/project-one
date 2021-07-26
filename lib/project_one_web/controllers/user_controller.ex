@@ -41,7 +41,7 @@ defmodule ProjectOneWeb.UserController do
     end
   end
 
-  def custom(conn, _) do
-    render(conn, "custom.json")
+  def custom(conn, %{"word" => word}) do
+    render(conn, "custom.json", word: word)
   end
 end
